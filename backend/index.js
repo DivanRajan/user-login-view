@@ -25,7 +25,7 @@ app.get('',(req,res)=>{
     })
 });
 
-app.post('',(req,res)=>{
+app.post('/login',(req,res)=>{
 db.userLogin(req.body)
 .then(response=>{
     res.status(200).send(response);
